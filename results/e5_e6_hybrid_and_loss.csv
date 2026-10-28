@@ -1,0 +1,8 @@
+Experiment,Conv_Blocks,Dense_Layer,Loss_Function,Dense_Dead_Pct,AUROC,AUPRC,MCC_Mean,MCC_SD,Inference_ms
+E5 (Uniform),Smooth RectLU (W=2),Smooth RectLU (W=2),Standard BCE,68.4,0.5012,0.0056,0.0,0.0,4.42
+E5 (Baseline),ReLU (Kinked),ReLU (Kinked),Standard BCE,18.2,0.874,0.3845,0.4196,0.094,4.1
+E5 (Hybrid),ReLU (Kinked),Smooth RectLU (W=2),Standard BCE,54.6,0.584,0.0485,0.0715,0.089,4.18
+E5 (Hybrid),Smooth RectLU (W=2),ReLU (Kinked),Standard BCE,15.62,0.8715,0.376,0.4112,0.0885,4.35
+Proposed,sigma-AS-RectLU,sigma-AS-RectLU,Standard BCE,15.1,0.8732,0.381,0.4145,0.086,4.58
+E6 (Loss),Smooth RectLU (W=2),Smooth RectLU (W=2),Weighted BCE,64.1,0.521,0.0094,0.021,0.044,4.42
+E6 (Loss),Smooth RectLU (W=2),Smooth RectLU (W=2),"Focal (gamma=2, alpha=0.25)",61.8,0.534,0.0148,0.0412,0.061,4.42
