@@ -1,0 +1,13 @@
+﻿cff-version: 1.2.0
+message: "If you use this software or dataset, please cite our manuscript."
+title: "Bias-Offset Sensitivity, Scale-Width Mismatch, and Majority-Class Collapse in C1 Piecewise-Quadratic Rectifiers: Mechanistic Dissection, Scale-Adaptive Design, and Empirical Validation on NIST GIAB Sequencing Data"
+version: 3.0.0
+date-released: 2026-10-30
+url: "https://github.com/preecha-msu/RectLU-Genomic-Collapse"
+authors:
+  - family-names: "Noiumkar"
+    given-names: "Preecha"
+    affiliation: "Faculty of Informatics, Mahasarakham University"
+  - family-names: "Chomsiri"
+    given-names: "Thawatchai"
+    affiliation: "Faculty of Informatics, Mahasarakham University"
