@@ -1,0 +1,34 @@
+Suggested Reviewers for Intelligent Systems with Applications (Elsevier)
+========================================================================
+(คัดเลือกจากผู้เชี่ยวชาญระดับนานาชาติในสาย Activation Functions, Neural Network Initialization,
+Imbalanced Learning, และ Genomic Deep Learning ที่ได้รับการอ้างอิงในบทความและไม่มีผลประโยชน์ทับซ้อน)
+
+1. Dr. Leonardo F. S. Scabini
+   - Institution: University of Sao Paulo (USP), Brazil / Ghent University, Belgium
+   - Email: leonardo.scabini@ugent.be (or scabini@usp.br)
+   - Expertise: Deep neural network weight initialization, neuronal rewiring, signal propagation [Ref. 40].
+   - Reason for Suggestion: Co-author of Neuronal Rewiring initialization (Neurocomputing, 2024); directly relevant to our variance propagation analysis and Experiment F initialization comparisons.
+
+2. Dr. Shiv Ram Dubey
+   - Institution: Indian Institute of Information Technology (IIIT), Allahabad, India
+   - Email: srdubey@iiita.ac.in
+   - Expertise: Activation functions in deep learning, CNN architectures, pattern recognition [Ref. 30].
+   - Reason for Suggestion: Lead author of the comprehensive Neurocomputing survey and benchmark on activation functions in deep learning.
+
+3. Dr. Dmytro Mishkin
+   - Institution: Czech Technical University in Prague (CTU), Czech Republic
+   - Email: ducha.aiki@gmail.com (or mishkdmy@cmp.felk.cvut.cz)
+   - Expertise: Layer-Sequential Unit-Variance (LSUV) initialization, CNN optimization dynamics [Ref. 32].
+   - Reason for Suggestion: Creator of LSUV initialization (ICLR), which we evaluate as a key data-driven variance-restoration control across Tables 8 and 11.
+
+4. Dr. Davide Chicco
+   - Institution: University of Milano-Bicocca, Milan, Italy
+   - Email: davide.chicco@unimib.it
+   - Expertise: Matthews correlation coefficient (MCC), imbalanced binary classification, biomedical informatics [Ref. 8].
+   - Reason for Suggestion: Leading authority on MCC evaluation under severe class imbalance and bioinformatics classification benchmarks.
+
+5. Dr. Ruibang Luo
+   - Institution: Department of Computer Science, The University of Hong Kong (HKU), Hong Kong
+   - Email: rbluo@cs.hku.hk
+   - Expertise: Deep convolutional neural networks for genomic read-pileup variant screening (Clairvoyante / Clair3) [Ref. 2].
+   - Reason for Suggestion: Pioneer of 2D-CNN genomic read-pileup tensor representations and benchmark evaluations on NIST GIAB datasets.
