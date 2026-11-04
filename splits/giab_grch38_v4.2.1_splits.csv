@@ -1,0 +1,5 @@
+﻿Split,Chromosomes,Cohort,Total_Windows,Negatives_n_minus,Positives_n_plus,Positive_Fraction_p_plus,Majority_Baseline_Accuracy
+Train,Chr1-18,HG001-HG005,350000,348040,1960,0.00560,0.99440
+Validation,Chr19-20,HG001-HG005,50000,49720,280,0.00560,0.99440
+Test,Chr21-22,HG001-HG005,50000,49720,280,0.00560,0.99440
+External,Chr21-22,HG006-HG007,50000,49721,279,0.00558,0.99442

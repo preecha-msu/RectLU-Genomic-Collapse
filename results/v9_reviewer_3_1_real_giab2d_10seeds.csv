@@ -1,0 +1,7 @@
+Configuration,MCC_050_Mean,MCC_050_SD,AUROC_Mean,AUROC_SD,AUPRC_Mean,Mean_TP_FP_FN,Time_ms_per_epoch
+"Smooth RectLU (L=0, W=2)",0.0313,0.0547,0.9587,0.0215,0.6115,0.3/0.2/59.7,946.36
+"Fixed-width SmeLU (L=-1, W=2)",0.0,0.0,0.936,0.0519,0.6918,0.0/0.0/60.0,905.55
+LayerNorm (No-Affine) + SmeLU,0.7537,0.4064,0.9879,0.024,0.9423,44.1/0.8/15.9,1445.1
+RMSNorm (No-Rescale) + SmeLU,0.9555,0.0544,0.9997,0.0003,0.9976,55.8/0.5/4.2,1023.55
+Explicit RMSNorm + SmeLU + InvRescale,0.9691,0.0373,0.9999,0.0001,0.999,57.3/0.6/2.7,1089.53
+Symm. sigma-AS-RectLU (Fused Eq. 6),0.97,0.0372,0.9999,0.0001,0.999,57.4/0.6/2.6,959.78

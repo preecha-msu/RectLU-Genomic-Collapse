@@ -1,0 +1,7 @@
+Highlights
+==========
+- Proves exact algebraic equivalence of Smooth RectLU to bias-shifted SmeLU.
+- Derives pre/post-activation variance recurrence showing 9-order contraction.
+- Proves causal q4 variance clamping restores gradients and 10/10 seed escape.
+- Fused Symmetric sigma-AS-RectLU cuts 2D GIAB training latency by 11.9%.
+- Validates 2x2 offset-by-scale remedies across 30 seeds and 6 genomic blocks.

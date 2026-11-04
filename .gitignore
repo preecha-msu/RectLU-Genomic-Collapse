@@ -1,0 +1,17 @@
+# Ignore large raw sequencing alignment files (>100 MB)
+*.bam
+*.bam.bai
+*.cram
+*.cram.crai
+*.fastq
+*.fastq.gz
+*.vcf.gz
+*.fasta
+*.fa
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.toc
+*.bak

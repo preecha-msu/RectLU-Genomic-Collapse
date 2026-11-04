@@ -1,0 +1,4 @@
+CRediT Authorship Contribution Statement
+========================================
+Preecha Noiumkar: Conceptualization, Methodology, Software, Data Curation, Formal Analysis, Investigation, Writing - Original Draft, Visualization.
+Thawatchai Chomsiri: Conceptualization, Theoretical Formalism, Supervision, Validation, Writing - Review & Editing.

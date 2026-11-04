@@ -1,0 +1,27 @@
+Dear Editor-in-Chief,
+Intelligent Systems with Applications (Elsevier)
+
+We are pleased to submit our original research manuscript entitled "A Mechanistic Study of Scale-Dependent Optimization Stagnation in C1 Piecewise-Quadratic Rectifiers Under Class Imbalance: Bias-Offset Equivalence, Layer-Wise Gradient Dynamics, and Scale-Adaptive Remedies" by Preecha Noiumkar and Thawatchai Chomsiri for consideration for publication in Intelligent Systems with Applications.
+
+1. Fit with Intelligent Systems with Applications:
+Deep convolutional neural networks deployed in intelligent rare-event screening systems (such as genomic variant screening in high-throughput sequencing, visual defect/digit anomaly detection, and highly imbalanced tabular decision systems) frequently operate under severe class imbalance (10:1 to 200:1) and varying input signal scales. While C1 piecewise-quadratic rectifiers (such as SmeLU, Smooth RectLU, and trainable AS-RectLU) replace ReLU's non-differentiable kink using fast elementary arithmetic, we show that anchoring their parabolic transition asymmetrically at the origin (L = 0, W = 2) introduces an implicit negative bias offset (Delta b = -1) and a vanishing origin derivative (f'(0+) = 0) that causes catastrophic multi-layer gradient stagnation when input amplitudes are small relative to transition width (sigma_l / W << 1).
+
+2. Key Methodological and Practical Contributions:
+- Exact Algebraic Identity & Causal Second-Moment Mechanics: We prove the exact bias-shift equivalence f_S(x; L, W) = SmeLU_{W/2}(x - L - W/2), derive layer-wise pre-activation (q_l) and post-activation (v_l) variance recurrences explaining 9-order-of-magnitude variance contraction, and confirm via direct Epoch-0 causal variance clamping (q_4 = 0.55 and 3.70) that eliminating fourth-layer variance collapse immediately restores first-layer weight gradients by 7 to 8 orders of magnitude and rescues seed convergence from 0/10 to 10/10 seeds.
+- Fused Scale-Adaptive Remedy & Measured Computational Efficiency: We formulate Symmetric Per-Sample sigma-AS-RectLU as a single fused piecewise-quadratic operator embedding per-sample RMS scale adaptation. Controlled six-way all-layer ablations on 50 x 101 x 4 NIST GIAB HG001 read-pileup tensors confirm that fused Symmetric sigma-AS-RectLU matches explicit 3-step modular RMSNorm + SmeLU + inverse rescaling in accuracy (MCC(0.50) = 0.9700 vs. 0.9691; AUROC = 0.9999) while reducing measured training latency by 11.9% (959.78 ms/epoch vs. 1089.53 ms/epoch) and outperforming all-layer LayerNorm + SmeLU in both speed (-33.6%) and stability (MCC = 0.9700 vs. 0.7537).
+- Rigorous Empirical Validation Without Resampling Approximations: Across 2x2 factorial experiments on synthetic 1D/2D motifs, Clean/Noisy MNIST (100:1), Imbalanced Tabular data (200:1), and both variant-scrubbed and unscrubbed natural 2D NIST GIAB HG001 read-pileup benchmarks, all claims are supported by direct empirical measurements across N = 10 to N = 30 paired random seeds (30/30 paired seed wins on low-scale 2D GIAB), K = 6 disjoint contiguous genomic test sub-blocks (180 block evaluations), and systematic learning-rate, gradient-clipping, and prior-bias ablations across Adam, RMSprop, and momentum SGD.
+
+All datasets, per-seed confusion logs (.csv), and PyTorch verification scripts are publicly archived at https://github.com/preecha-msu/RectLU-Genomic-Collapse.
+
+We confirm that this manuscript is original, has not been published elsewhere, and is not under consideration by any other journal. Both authors have approved the manuscript and declare no competing interests.
+
+Thank you very much for your time and consideration.
+
+Sincerely,
+
+Preecha Noiumkar, Ph.D. (Corresponding Author)
+and Thawatchai Chomsiri, Ph.D.
+Research Center of Information Technology for the Future,
+Department of Information Technology, Faculty of Informatics,
+Mahasarakham University, Maha Sarakham 44150, Thailand
+Emails: preecha.n@msu.ac.th, thawatchai.c@msu.ac.th

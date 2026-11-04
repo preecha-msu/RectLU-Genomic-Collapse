@@ -1,0 +1,8 @@
+Experiment_Group,Configuration,N_Seeds,MCC_050_Mean,MCC_050_SD,MCC_050_MinMax,AUROC_Mean,AUROC_SD,SubBlock_MCC_Mean,SubBlock_MCC_SD
+30_Seed_and_6_Genomic_SubBlock_GIAB2D,"Smooth RectLU (L=0, W=2, 0.25x)",30,0.0291,0.0495,"[-0.0123, 0.1232]",0.9499,0.0255,0.0135,0.0682
+30_Seed_and_6_Genomic_SubBlock_GIAB2D,"ReLU (Homogeneous C0, 0.25x)",30,0.9828,0.0327,"[0.8348, 1.0000]",1.0,0.0,0.9827,0.0444
+30_Seed_and_6_Genomic_SubBlock_GIAB2D,"Symm. sigma-AS-RectLU (kappa=0.8, 0.25x)",30,0.9797,0.0328,"[0.8348, 1.0000]",1.0,0.0001,0.9797,0.0463
+10_Seed_Cross_Optimizer_GIAB2D,"RMSprop + Smooth RectLU (L=0, W=2, N=10)",10,0.3396,0.3235,"[-0.0123, 0.8449]",0.9825,0.0291,-,-
+10_Seed_Cross_Optimizer_GIAB2D,RMSprop + Symm. sigma-AS-RectLU (N=10),10,0.8887,0.094,"[0.6404, 0.9723]",0.9982,0.0015,-,-
+10_Seed_Cross_Optimizer_GIAB2D,"SGD (Mom 0.9) + Smooth RectLU (L=0, W=2, N=10)",10,0.0,0.0,"[0.0000, 0.0000]",0.5,0.0,-,-
+10_Seed_Cross_Optimizer_GIAB2D,SGD (Mom 0.9) + Symm. sigma-AS-RectLU (N=10),10,0.2821,0.274,"[0.0000, 0.6779]",0.9892,0.0098,-,-

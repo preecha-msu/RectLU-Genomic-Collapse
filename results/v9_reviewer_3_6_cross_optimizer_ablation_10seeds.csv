@@ -1,0 +1,15 @@
+Configuration,Optimizer,LR,Grad_Clip,Prior_Bias,Escaped_Seeds,MCC_050_Mean,MCC_050_SD,Cal_MCC_Mean,Cal_MCC_SD,AUROC_Mean,AUROC_SD,AUPRC_Mean
+SGD (lr=1e-3) + Smooth RectLU,SGD,0.001,None,No,0/10,0.0,0.0,0.0,0.0,0.5,0.0,0.0909
+SGD (lr=1e-3) + Symm. sigma-AS-RectLU,SGD,0.001,None,No,0/10,0.0,0.0,0.5413,0.1057,0.9489,0.0256,0.6647
+SGD (lr=1e-2) + Smooth RectLU,SGD,0.01,None,No,0/10,0.0,0.0,0.0,0.0,0.5,0.0,0.0909
+"SGD (lr=1e-2) + Fixed SmeLU (L=-1, W=2)",SGD,0.01,None,No,0/10,0.0,0.0,0.1714,0.2427,0.8784,0.0721,0.5272
+SGD (lr=1e-2) + Symm. sigma-AS-RectLU,SGD,0.01,None,No,6/10,0.3015,0.2899,0.8285,0.0755,0.9905,0.0081,0.9367
+SGD (lr=5e-2) + Smooth RectLU,SGD,0.05,None,No,0/10,0.0,0.0,0.0,0.0,0.5,0.0,0.0909
+SGD (lr=5e-2) + Symm. sigma-AS-RectLU,SGD,0.05,None,No,10/10,0.9648,0.0317,0.9756,0.0113,0.9999,0.0002,0.9988
+"SGD (lr=5e-2, Clip=1.0) + Smooth RectLU",SGD,0.05,1.0,No,0/10,0.0,0.0,0.0,0.0,0.5,0.0,0.0909
+"SGD (lr=5e-2, Clip=1.0) + Symm. sigma-AS-RectLU",SGD,0.05,1.0,No,10/10,0.9808,0.009,0.9758,0.011,0.9999,0.0001,0.9995
+"SGD (lr=5e-2, Clip=1.0, PriorBias) + Symm. sigma-AS",SGD,0.05,1.0,Yes,10/10,0.9807,0.0081,0.9775,0.0087,0.9999,0.0001,0.9993
+RMSprop (lr=5e-4) + Smooth RectLU,RMSPROP,0.0005,None,No,10/10,0.5086,0.1632,0.8444,0.0854,0.9934,0.0076,0.9239
+RMSprop (lr=5e-4) + Symm. sigma-AS-RectLU,RMSPROP,0.0005,None,No,10/10,0.9548,0.0204,0.9648,0.0235,0.9997,0.0003,0.9974
+"RMSprop (lr=1e-3, Clip=1.0) + Smooth RectLU",RMSPROP,0.001,1.0,No,9/10,0.5096,0.3164,0.8655,0.1344,0.9912,0.0142,0.9114
+"RMSprop (lr=1e-3, Clip=1.0) + Symm. sigma-AS-RectLU",RMSPROP,0.001,1.0,No,10/10,0.9899,0.0092,0.9909,0.0104,1.0,0.0,0.9999
