@@ -1,0 +1,6 @@
+Configuration,Init_Method,Escaped_Seeds,MCC_050_Mean,MCC_050_SD,AUROC_Mean,AUROC_SD,AUPRC_Mean
+"Smooth RectLU (L=0, W=2) + He Init [26]",HE,1/10,0.0337,0.0464,0.9526,0.027,0.5945
+"Smooth RectLU (L=0, W=2) + LSUV Init [32]",LSUV,10/10,0.991,0.0133,1.0,0.0001,0.9997
+"Smooth RectLU (L=0, W=2) + Neuronal Rewiring Init [40]",REWIRE,10/10,0.991,0.0084,0.9999,0.0001,0.9992
+Symm. sigma-AS-RectLU (kappa=0.8) + He Init [26],HE,10/10,0.9763,0.0505,1.0,0.0,0.9998
+Symm. sigma-AS-RectLU (kappa=0.8) + LSUV Init [32],LSUV,10/10,0.9648,0.0207,0.9999,0.0001,0.9992

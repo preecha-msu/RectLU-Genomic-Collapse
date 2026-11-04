@@ -1,0 +1,11 @@
+Configuration,Loss_Function,MCC_050_Mean,MCC_050_SD,AUROC_Mean,AUROC_SD,AUPRC_Mean
+Kappa Sweep: Symm. sigma-AS (kappa=0.2),BCE,0.9859,0.0324,1.0,0.0,0.9999
+Kappa Sweep: Symm. sigma-AS (kappa=0.4),BCE,0.9822,0.0352,1.0,0.0,1.0
+"Kappa Sweep: Symm. sigma-AS (kappa=0.8, Default)",BCE,0.9771,0.0505,1.0,0.0,0.9998
+Kappa Sweep: Symm. sigma-AS (kappa=1.2),BCE,0.9683,0.059,0.9999,0.0002,0.9989
+Kappa Sweep: Symm. sigma-AS (kappa=1.6),BCE,0.9265,0.0601,0.9991,0.0013,0.9943
+Kappa Sweep: Symm. sigma-AS (kappa=2.0),BCE,0.8957,0.0483,0.9971,0.002,0.9822
+Loss Ablation: Weighted BCE (w+=10) + Smooth RectLU,WBCE,0.0,0.0,0.5,0.0,0.0909
+Loss Ablation: Weighted BCE (w+=10) + Symm. sigma-AS,WBCE,0.9856,0.0141,1.0,0.0001,0.9998
+Loss Ablation: Focal Loss (g=2) + Smooth RectLU,FOCAL,0.0,0.0,0.8935,0.0825,0.532
+Loss Ablation: Focal Loss (g=2) + Symm. sigma-AS,FOCAL,0.9723,0.0289,0.9998,0.0002,0.9986
